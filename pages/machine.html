@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ERISO | ENGINEERING SERVICES</title>
+  <link rel="shortcut icon" href="../e-logo.png" type="image/x-icon">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="enginnering-css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="enginnering-css/style.css">
+  <link rel="stylesheet" href="../fontawesome-5.5/css/all.min.css" />
+  <link rel="stylesheet" href="../slick/slick.css">
+  <link rel="stylesheet" href="../slick/slick-theme.css">
+  <link rel="stylesheet" href="../magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0b0b0b;
+      color: #fff;
+    }
+    @media (min-width: 500px) {
+      nav {
+        background: linear-gradient(45deg, #0f1f6b, #4f0303);
+        overflow: hidden;
+      }
+
+      nav a {
+        float: right; /* Sağa yaslanması için */
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #intro .intro-text {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        right: 0;
+        height: calc(50% - 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      #intro .product-screens .product-screen-2 {
+        margin-bottom: 20px;
+        top: 0px;
+      }
+
+
+      .secondpart2 {
+        margin-left: 80px;
+        margin-top: 100px;
+        margin-right: 100px;
+      }
+    }
+    @import url(https://fonts.googleapis.com/css?family=Special+Elite);
+    html {
+      margin:0;
+      padding:0;
+      height:100%;
+    }
+    @media (min-width: 500px) {
+    p { margin:15px;  }
+    .callback {
+      color:rgba(0,0,0,0.2);
+      padding-top:25px;
+      line-height:1.5em;
+    }
+    input{
+      border:0;
+      border-bottom:1px dotted rgba(0,0,0,0.1);
+      margin:0;
+      height:20px;
+      outline: none;
+      font-family: 'Special Elite', cursive;
+    }
+
+    input::-webkit-input-placeholder {
+      color: rgba(1,1,1,0.5);
+      transition: color 0.3s;
+    }
+    input:focus::-webkit-input-placeholder {
+      color: rgba(1,1,1,0.1);
+    }
+
+    input::-moz-placeholder {
+      color: rgba(1,1,1,0.5);
+      transition: color 0.3s;
+    }
+    input:focus::-moz-placeholder {
+      color: rgba(1,1,1,0.1);
+    }
+
+    p:nth-child(3){
+      margin-top:-10px;
+      margin-left:0;
+      border:0;
+    }
+
+
+    #envelope {
+      width:408px;
+      height:224px;
+      background: #f2f2f2;
+      margin:100px auto;
+      position:relative;
+    }
+
+    #envelope div:first-child {
+      width:100%;
+      height:100px;
+      position:absolute;
+      bottom:0;
+      background: -webkit-linear-gradient(top, #fff 0%, #f2f2f2 20%);
+      background: -moz-linear-gradient(top, #fff 0%, #f2f2f2 20%);
+      background: -o-linear-gradient(top, #fff 0%, #f2f2f2 20%);
+      background: -ms-linear-gradient(top, #fff) 0%, #f2f2f2 20%);
+      background: linear-gradient(top, #fff 0%, #f2f2f2 20%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f2f2f2',GradientType=0 );
+      z-index:10;
+      box-shadow: 0px -2px 4px rgba(0,0,0,0.1);
+    }
+
+    #envelope div:nth-child(2){
+      width:360px;
+      height:134px;
+      background:#fff;
+      position:absolute;
+      z-index:5;
+      top:-44px;
+      left:50%;
+      margin-left:-180px;
+    }
+
+    #envelope div:nth-child(2):before {
+      content:"";
+      position:absolute;
+      width: 0;
+      height: 0;
+      border-top: 84px solid #e6e6e6;
+      border-left: 9px solid transparent;
+      left:-9px;
+      top:50px;
+    }
+
+    #envelope div:nth-child(2):after {
+      content:"";
+      position:absolute;
+      width: 0;
+      height: 0;
+      border-top: 84px solid #e6e6e6;
+      border-right: 9px solid transparent;
+      right:-9px;
+      top:50px;
+    }
+
+    #envelope div:nth-child(3){
+      width:100%;
+      height:9px;
+      position:absolute;
+      bottom:0;
+      overflow:hidden;
+      z-index:850;
+    }
+
+    .line {
+      width:35px;
+      height:9px;
+      float:left;
+      transform: skewX(25deg);
+      z-index:900;
+      margin: 0 0 0 19px;
+    }
+
+    .line:nth-child(odd) { background:#005091; }
+    .line:nth-child(even) { background:#9b1d4a; }
+    #envelope div:nth-child(5) .line:nth-child(odd) { background:#9b1d4a; }
+    #envelope div:nth-child(5) .line:nth-child(even) { background:#005091; }
+
+    .line:first-child{  margin-left:-10px; }
+
+    #envelope div:nth-child(4){
+      width:140px;
+      height:9px;
+      position:absolute;
+      top:88px;
+      left:9px;
+      overflow:hidden;
+      z-index:850;
+      transform:rotate(-270deg);
+      transform-origin:0 0;
+    }
+
+    #envelope div:nth-child(5){
+      width:136px;
+      height:9px;
+      position:absolute;
+      top:88px;
+      right:-136px;
+      overflow:hidden;
+      z-index:850;
+      transform:rotate(-270deg);
+      transform-origin:0 0;
+
+    }
+
+    #envelope div:nth-child(5) .line {
+      transform: skewX(-25deg);
+    }
+
+    #envelope div:nth-child(5) .line:first-child {
+      margin-left:-7px;
+    }
+
+
+    @keyframes sending {
+      0% { transform:translateY(0px); }
+      10% { transform:translateY(-2px); }
+      100% { transform:translateY(135px); }
+    }
+
+#contact{
+
+  background-color: #6e0813;
+
+}
+
+
+    .slideshow-container {
+     width: 70%;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+
+    .info-img{
+
+      width: 300px;
+      height: 200px;
+    }
+
+
+    .cad-design{
+
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      border: 5px solid #ccc;
+      margin-right: 10px;
+      cursor: pointer;
+      padding: 10px 10px 10px 10px;
+    }
+
+    .cad-design:hover{
+
+      border-color: #007bff;
+    }
+
+    .cad-design1{
+
+      display: inline-block;
+
+      text-align: center;
+      border: 5px solid #ccc;
+      margin-right: 10px;
+      cursor: pointer;
+      padding: 10px 10px 10px 10px;
+    }
+
+    .cad-design1:hover{
+      border-color: #007bff;
+
+    }
+
+    .baslik-machine{
+      font-size: 20px;
+      text-align: center;
+      text-shadow: 2px 2px 5px red;
+    }
+
+    .info-wedo h3{
+
+      text-align: center;
+    }
+
+    .info-wedo2 h2{
+
+      text-align: center;
+    }
+
+    .metal-image{
+
+      width: 250px;
+      height: 200px;
+    }
+.contain{
+
+  border: 10px solid #520505; /* Frame color */
+  position: relative;
+  perspective: 800px;
+ height:700px;
+}
+
+.contain2{
+  border: 10px solid #0f1f6b; /* Frame color */
+  position: relative;
+  perspective: 800px;
+  height:500px;
+  margin-top: 100px;
+}
+
+.contain3{
+  border: 10px solid #520505; /* Frame color */
+  position: relative;
+  perspective: 800px;
+  height:400px;
+  margin-top: 100px;
+}
+
+    .container{
+      float: left;
+      width: 25%;
+      padding: 30px;
+      margin-left: 500px;
+      margin-right:30px;
+      margin-top: 50px;
+      padding-top: 0px;
+    }
+
+      .social-icons {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+      }
+
+      .social-icons a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 15px;
+      }
+
+      .social-icons i {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="machine" style="display: flex;  background-color: #fff;">
+<div class="tm-next">
+  <a href="index.html">
+    <img src="../eriso-ust.png" style="width: 170px;">
+  </a>
+</div>
+<h4 id="changingHeading" style="text-align: center; font-size: 50px;   color: #3498db;
+      transition: color 0.5s ease-in-out; margin-top: 40px; margin-left: 300px;">
+  ENGINEERING SOLUTIONS</h4>
+
+  <div class="all-media" style="display: flex; margin-left: 400px; margin-top: 60px;">
+    <div class="social-icons" >
+      <!-- WhatsApp ikonu ve bağlantısı -->
+      <a href="https://wa.me/905340732401" target="_blank" style="margin-left: 70px;">
+        <i class="fab fa-whatsapp fa-beat-fade" style="color: #13ec54;"></i>
+      </a>
+    </div>
+    <div class="social-icons" style="margin-top: 5px;">
+      <!-- LinkedIn ikonu ve bağlantısı -->
+      <a href="https://www.linkedin.com/showcase/eriso-solutions/?trk=affiliated-pages" target="_blank">
+        <i class="fab fa-linkedin fa-beat-fade fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<section id="intro" style="margin-top: -60px;">
+
+
+  <div class="slideshow-container " style="margin-top: 40px; width:100% ; height: 150%;  background-color: #a2a7b4;">
+
+
+    <div class="mySlides">
+      <img src="../machine-img/cnc.jpg" alt="Resim 1">
+    </div>
+    <div class="mySlides">
+      <img src="../machine-img/cad-dsgn.jpg" alt="Resim 2">
+    </div>
+    <div class="mySlides">
+      <img src="../machine-img/cnc1.JPG" alt="Resim 2">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+</section><!-- #intro -->
+
+
+<section style="margin-top: 100px;">
+
+  <div class="contain">
+
+  <h3 class="baslik-machine">CAD DESIGN</h3>
+<div class="secondpart" style="display: flex; margin-left: 40px; margin-right: 40px;" id="part">
+
+  <div class="cad-design">
+
+    <h3>REVERSE ENGINEERING</h3>
+    <img src="../engin-img/reverse.png" class="info-img"/>
+
+    <p style="margin-top: 50px;"> Recreation of 3D scan data into CAD models enabling analysis, optimisation and remanufacture of components and assemblies.</p>
+  </div>
+  <div class="cad-design">
+
+    <h3>2D & 3D MODELING</h3>
+    <img src="../engin-img/2d.png" class="info-img"/>
+
+    <p style="margin-top: 50px;"> Concept design <br>
+      Fabrication drawing <br>
+      Patent drawing <br>
+      Coordination drawıng <br>
+      3D Drawıng for 3D printing <br>
+      Mechanical components <br>
+    </p>
+  </div>
+
+  <div class="cad-design">
+
+    <h3>PROJECT DESIGN</h3>
+    <img src="../engin-img/project.png" class="info-img"/>
+
+    <p style="height: 200px; width: 600px; margin-top: 50px;"> Throughout the cycle of a project, consideration for design should be taken; how a part will be manufactured, the process, material, quantity, environmental affects etc.
+      Our design engineers and metrology team work closely from the very beginning of your project to establish and understand the exact design requirements and intended outcome end-to-end, using their experience and expertise to help you to achieve the very best result.
+    </p>
+  </div>
+
+
+</div>
+  </div>
+</section>
+
+<section>
+
+<div class="contain2">
+  <h3 class="baslik-machine"> MACHINING & METAL FABRICATION</h3>
+  <div class="secondpart2" style="display: flex;" id="part2">
+    <div class="cad-design">
+      <h2>CNC MACHINING SERVİCES</h2>
+
+
+    <p style="width: 400px; height: 160px;">
+      High Precision: Standard dimensional tolerance of ±0.005mm(0.0002in) <br>
+      Various CNC machines: 3-axis, 4-axis, and 5-axis CNC machines <br>
+      Various Work Techniques: CNC milling, CNC turning, wire EDM, etc.<br>
+      Certifications: ISO9001:2008,TS16949 <br>
+
+    </p>
+</div>
+
+
+    <div class="cad-design">
+      <h2>CNC milling</h2>
+
+
+      <p>
+        CNC Milling uses 3-axis milling and 5-axis indexed milling to rapidly cut a choice of more than 30 engineering-grade thermoplastics and metals into complex shapes and precision components.
+
+
+      </p>
+    </div>
+
+    <div class="cad-design">
+      <h2>CNC turning</h2>
+
+
+      <p>
+        CNC Turning uses a lathe to create detailed functional prototypes and end-use parts with cylindrical features. It removes material from bulk by rotating the workpiece.
+      </p>
+    </div>
+
+
+  </div>
+
+
+</div>
+</section>
+<section>
+  <div class="contain3">
+
+  <h2 style="text-align: center;">Sheet Metal Fabrication</h2>
+  <div class="lastpart">
+  <div class="cad-design1"  style="display: flex;">
+
+    <img src="../machine-img/img_2.png" class="metal-image" style="margin-left: 200px;" />
+
+
+
+    <p style="width: 700px;
+  height: 100px;
+  margin-left: 50px;
+margin-right: 50px;
+margin-top: 40px;">
+      We can handle projects ranging from simple fabrications to very complex weldments. We offer value-added assembly on any of our fabricated products. We currently assemble components and panels to frames for several customers. This service offers a complete solution for our customers and allows us to verify that all the components fit as designed before delivery. For customers that require more complex assembly, including wiring, PLC integration, and testing, we have the expertise and resources for this type of work. These are some of the products manufactured;
+
+    </p>
+    <img src="../machine-img/img_3.png" class="metal-image"/>
+
+  </div>
+
+
+
+  </div>
+  </div>
+</section>
+<section>
+
+  <div class="cad-design" style="margin-left: 0px; margin-right: 80px;
+margin-top: 100px;">
+
+
+    <h3 class="baslik-machine"> MACHINERY</h3>
+    <img src="../machine-img/img_4.png" style="height: 150px; width: 150px;" />
+    <p class="cad-info" style="margin-top: 30px;">
+
+      Scientifıc testing devices
+
+    </p>
+    <div class="container" style="margin-left: 600px;">
+      <iframe src="../catalogue-pdf/enginnering-eriso.pdf" frameborder="0" width="400px" height="500px"></iframe>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+<!-- Contact Form JavaScript File -->
+<script src="../contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="../js/software.js"></script>
+<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Her 2 saniyede bir resmi değiştir
+  }
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function scrollToContact() {
+    document.getElementById('part').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function scrollToContact2() {
+    document.getElementById('part2').scrollIntoView({ behavior: 'smooth' });
+  }
+
+
+  function getRandomColor() {
+    // Generate a random hex color code
+    return '#' + Math.floor(Math.random()*16777215).toString(16);
+  }
+
+  function changeHeadingColor() {
+    var heading = document.getElementById('changingHeading');
+    heading.style.color = getRandomColor();
+  }
+
+  // Change heading color every 2 seconds (2000 milliseconds)
+  setInterval(changeHeadingColor, 2000);
+
+
+
+</script>
+
+</body>
+</html>

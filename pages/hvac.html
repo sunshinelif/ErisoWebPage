@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ERISO | HVAC</title>
+    <link rel="shortcut icon" href="../e-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+
+        body {
+            margin:0;
+            display:grid;
+            place-content:center;
+            background-color: 	#F5F5F5;
+        }
+        @media (min-width: 575px) {
+            h4 {
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 20px;
+                text-align: center;
+                background-color: #C62828;
+                color: #fff;
+
+            }
+
+            .ahus-content {
+                display: flex;
+                margin-top: 20px;
+
+            }
+
+            .hru-content {
+                display: flex;
+                margin-top: 20px;
+            }
+
+            .roof-content {
+
+                display: flex;
+                margin-top: 20px;
+            }
+
+            .chiller-content {
+                display: flex;
+                margin-top: 20px;
+            }
+
+            #img1 {
+
+                width: 300px;
+                height: 200px;
+                --s: 10px; /* control the size */
+                padding: var(--s);
+                border: calc(2 * var(--s)) solid #0000;
+                outline: 1px solid #000;
+                outline-offset: calc(-1 * var(--s));
+                background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+            }
+
+            #img2 {
+
+                width: 300px;
+                height: 200px;
+                --s: 10px; /* control the size */
+                padding: var(--s);
+                border: calc(2 * var(--s)) solid #0000;
+                outline: 1px solid #000;
+                outline-offset: calc(-1 * var(--s));
+                background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+            }
+
+            #img3 {
+
+                width: 500px;
+                height: 500px;
+                margin-top: 100px;
+                --s: 10px; /* control the size */
+                padding: var(--s);
+                border: calc(2 * var(--s)) solid #0000;
+                outline: 1px solid #000;
+                outline-offset: calc(-1 * var(--s));
+                background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+            }
+
+            #img4 {
+                width: 400px;
+                height: 400px;
+                margin-top: 20px;
+                --s: 10px; /* control the size */
+                padding: var(--s);
+                border: calc(2 * var(--s)) solid #0000;
+                outline: 1px solid #000;
+                outline-offset: calc(-1 * var(--s));
+                background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+            }
+
+            #img5 {
+                width: 400px;
+                height: 400px;
+                --s: 10px; /* control the size */
+                padding: var(--s);
+                border: calc(2 * var(--s)) solid #0000;
+                outline: 1px solid #000;
+                outline-offset: calc(-1 * var(--s));
+                background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+
+            }
+
+            h3 {
+                color: #4f0303;
+                font-size: 20px;
+            }
+
+            .metin {
+
+                margin-left: 100px;
+            }
+
+            .ahus {
+                margin-top: 50px;
+
+            }
+
+            .hru {
+                margin-top: 50px;
+            }
+
+            .rooftops {
+                margin-top: 50px;
+            }
+
+
+            @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+            figure.snip1113 {
+                font-family: 'Raleway', Arial, sans-serif;
+                position: relative;
+                overflow: hidden;
+                margin: 10px;
+                min-width: 220px;
+                max-width: 500px;
+                width: 100%;
+                background: #ffffff;
+                text-align: center;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            }
+
+            figure.snip1113 * {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+
+            figure.snip1113 img {
+                max-width: 65%;
+                margin: 40px auto;
+                display: block;
+                position: relative;
+                border: 3px solid #666666;
+                padding: 15px 15px 85px 15px;
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+            }
+
+            figure.snip1113 figcaption {
+                position: absolute;
+                height: 120px;
+                bottom: 0px;
+                left: 0;
+                right: 0;
+                display: block;
+            }
+
+            figure.snip1113 h3 {
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 50px;
+                width: 100%;
+                padding: 5px 12px;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            figure.snip1113 h3 span {
+                font-weight: 800;
+            }
+
+            figure.snip1113 h4 {
+                margin: 0;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                opacity: 0.6;
+                font-size: 1.1em;
+            }
+
+            figure.snip1113.blue img {
+                border-color: #2472a4;
+            }
+
+            figure.snip1113.blue h3,
+            figure.snip1113.blue h4 {
+                color: #2472a4;
+            }
+
+            figure.snip1113.red img {
+                border-color: #ab3326;
+            }
+
+            figure.snip1113.red h3,
+            figure.snip1113.red h4 {
+                color: #ab3326;
+            }
+
+            figure.snip1113.yellow img {
+                border-color: #e08e0b;
+            }
+
+            figure.snip1113.yellow h3,
+            figure.snip1113.yellow h4 {
+                color: #e08e0b;
+            }
+
+            figure.snip1113.green img {
+                border-color: #229955;
+            }
+
+            figure.snip1113.green h3,
+            figure.snip1113.green h4 {
+                color: #229955;
+            }
+
+            figure.snip1113.orange img {
+                border-color: #d67118;
+            }
+
+            figure.snip1113.orange h3,
+            figure.snip1113.orange h4 {
+                color: #d67118;
+            }
+
+            figure.snip1113.navy img {
+                border-color: #2b3c4e;
+            }
+
+            figure.snip1113.navy h3,
+            figure.snip1113.navy h4 {
+                color: #2b3c4e;
+            }
+            .social-icons {
+                text-align: center;
+                width: 100px;
+                height: 100px;
+            }
+
+            .social-icons a {
+                text-decoration: none;
+                color: #333;
+                margin: 0 15px;
+            }
+
+            .social-icons i {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="navbar">
+
+    <div class="logo">
+        <a href="index.html">
+        <img src="../eriso-ust.png" style="width: 150px; margin-top: 30px; margin-left: -150px;">
+    </a>
+
+    </div>
+    <h4 style="text-align: center; margin-top: 50px; margin-left: 650px; text-shadow: 2px 2px 5px red;">HVACR EQUIPMENTS</h4>
+    <div class="all-media" style="display: flex; margin-left: 400px; margin-top: 80px;">
+        <div class="social-icons" >
+            <!-- WhatsApp ikonu ve bağlantısı -->
+            <a href="https://wa.me/905340732401" target="_blank" style="margin-left: 70px;">
+                <i class="fab fa-whatsapp fa-beat-fade" style="color: #13ec54;"></i>
+            </a>
+        </div>
+        <div class="social-icons" style="margin-top: 5px;">
+            <!-- LinkedIn ikonu ve bağlantısı -->
+            <a href="https://www.linkedin.com/showcase/eriso-hvacr-trading-co/?trk=affiliated-pages" target="_blank">
+                <i class="fab fa-linkedin fa-beat-fade fa-lg"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<section>
+<div class="container">
+    <div class="ahus" >
+    <h2>AHUS</h2>
+
+        <div class="ahus-content">
+<img src="../hvac-img/img.png" class="images" id="img1"/>
+    <img src="../hvac-img/img_1.png" class="images" id="img2"/>
+    <div class="first">
+        <h3 style="margin-left: 100px;"> Features</h3>
+        <p class="metin">
+
+            •	Modular structure <br>
+            •	30 different section options <br>
+            •	Wide air flow range between 1.000 m³/h and 120.000 m³/h <br>
+            •	Provision of subsection regarding the project requirements <br>
+            •	Easy and quick installation <br>
+            •	Configuration flexibility <br>
+            •	High energy efficiency <br>
+            •	Quality production <br>
+            •	Flexible  solutions regarding the project requirements <br>
+            •	Package solutions
+
+        </p>
+    </div>
+        </div>
+    </div>
+    <div class="hru">
+  <h2>  HRU & ACCESSORIES </h2>
+        <div class="hru-content">
+    <img src="../hvac-img/img_2.png"  class="images" id="img3"/>
+    <div class="first">
+        <h3 style="margin-left: 100px;">  Features</h3>
+        <p class="metin">
+
+            •	12 standard models with CE mark, <br>
+            •	High efficient and direct driven AC Fans with low noise level, <br>
+            •	Proper ventilation by fan speed control having 5 levels for exhaust air and fresh air controlled separately, <br>
+            •	Easy installation and maintenance by compact design, <br>
+            •	Aluminum plate type heat exchangers with high conductivity and performance, <br>
+            •	High indoor air quality with washable polyurethane filters, <br>
+            •	Excellent sound and heat isolation with fully insulated cabinet.
+
+
+        </p>
+<h3 style="margin-left: 100px;">Heat Recovery Units Accessories</h3>
+        <p class="metin">
+            •	VCE Duct Type Electrical Heater <br>
+            •	HWC/CWC Duct Type Water Coil  <br>
+            •	HVK Hydraulic Valve Kit  <br>
+            •	OCK Outdoor Connection Kit  <br>
+            •	BCK By-Pass Connection Kit  <br>
+            •	DCK Rectangular Duct Connection Kit  <br>
+            •	VWC Weatherproof Cover  <br>
+            •	SLT Circular Duct Type Silencer  <br>
+            •	VFK Duct Type Bag Filter  <br>
+            •	Clogged Filter Sensor  <br>
+            •	Heat Exchanger Frost Protection Sensor  <br>
+            •	Carbon dioxide and Air Quality Sensor  <br>
+            •	Room Temperature Sensor  <br>
+            •	Modbus Protocol  <br>
+            •	Bacnet Protocol  <br>
+
+        </p>
+    </div>
+        </div>
+    </div>
+
+    <div class="rooftops">
+    <h2>ROOFTOPS</h2>
+
+        <div class="roof-content">
+    <img src="../hvac-img/img_3.png" class="images" id="img4"/>
+    <div class="first">
+<h3 style="margin-left: 50px; font-size: 12px;"> Standard Features</h3>
+        <p  class="metin" style="margin-left: 20px; font-size: 12px;">
+
+            •	7-350 kW capacity range <br>
+            •	R-410a refrigerant fluid <br>
+            •	R-454b refrigerant fluid <br>
+            •	R-32 refrigerant fluid <br>
+            •	Scroll Compressor <br>
+            •	Heating <br>
+            •	Cooling <br>
+            •	Wired remote control <br>
+            •	Asymmetric Cooling <br>
+            •	Dual skin panel body <br>
+            •	Cooling + heat pump <br>
+            •	Cooling + heat pump + gas burner <br>
+            •	EC plug fan <br>
+            •	Thermodynamic heat recovery <br>
+            •	Plug & play <br>
+            •	Full automatic <br>
+            •	LCD display <br>
+            •	Automatic defrost <br>
+            •	Intelligent defrost system <br>
+            •	Electronic expansion valve <br>
+            •	Inside air quality <br>
+            •	Free cooling <br>
+            •	Easy service and maintenance
+
+        </p>
+
+    </div>
+<div class="first">
+        <h3 style="margin-left: 200px; font-size: 12px;"> Optionals Features</h3>
+    <p  class="metin" style="margin-left: 100px; font-size: 12px;">
+
+        •	Ability to work with 100% fresh air <br>
+        •	Plate and rotary type heat recovery systems <br>
+        •	Smoke detector <br>
+        •	Dirty filter alarm <br>
+        •	Hot water, vapour or electric heating <br>
+        •	Gas burner heating <br>
+        •	Ability to set the fresh air ratio between 0 …100 % automatically <br>
+        •	Thermal or entalphy free cooling (economizer) <br>
+        •	CO2 indoor air quality control <br>
+        •	Ability to connect to building management system <br>
+        •	Three steps of filtration (G4+F7+F9) <br>
+        •	Models with inverter scroll compressor <br>
+        •	Epoxy and hydrophilic coating on the evaporator and condenser coil surface <br>
+        •	Condenser surface protection mesh <br>
+        •	Water cooled condenser <br>
+        •	Models suitable for extremely high ambient temperatures <br>
+        •	Units with low noise levels <br>
+        •	Custom design for special project and flexible production
+
+    </p>
+
+
+</div>
+
+        </div>
+
+    <div class="chiller">
+        <h2>CHILLER</h2>
+
+        <div class="chiller-content">
+            <img src="../hvac-img/img_4.png" class="images" id="img5"/>
+            <div class="first">
+
+                <h3 style="margin-left: 200px; margin-top: 50px;">Standard Features</h3>
+                <p  class="metin" style="margin-left: 200px;">
+
+                    o	5-2000 kW capacity range <br>
+                    o	R134A/R410A refrigerant fluid  <br>
+                    o	 Screw/Scroll compressor  <br>
+                    o	-15°C low water temperature  <br>
+                    o	 Microprocessor control  <br>
+                    o	Shell and tube  <br>
+                    o	Asymmetric cooling/Cooling/Heat Pump  <br>
+                    o	Automatic defrost  <br>
+                    o	Smart defrost system  <br>
+                    o	Electronic expansion valve  <br>
+                    o	Easy service and maintenance  <br>
+
+
+                </p>
+    </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<figure class="snip1113 red" style="margin-top: 100px; margin-left: 500px;">
+    <img src="../hvac-img/hvac.png" alt="pr-sample1" />
+    <figcaption>
+        <h3> <span>ERISO | HVACR </span></h3>
+
+    </figcaption>
+</figure>
+
+
+
+<script>
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
