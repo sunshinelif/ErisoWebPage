@@ -266,6 +266,10 @@
         .social-icons i {
             font-size: 30px;
         }
+
+        .general{
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
@@ -300,14 +304,14 @@
             align-items: center;">
 
     <div class="image-containerr">
-        <img src="../steel-image/AL/coilsss.jpg" alt="coils" class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" style="margin-top: 50px;" onclick="slideRedirection('/erisowebsite/templatemo_525_the_town/ALUM.html')" />
+        <img src="../steel-image/aluminum/coilsss.jpg" alt="coils" class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" style="margin-top: 50px;" onclick="gitpage1()" />
         <div class="text-overlay" >
             ALUMINUM COILS
             <p>Click for more...</p>
         </div>
     </div>
     <div class="image-containerr">
-        <img src="../steel-image/AL/prepainted.jpg" alt="prep-coils" class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" style="margin-top: 50px;" onclick="slideRedirection('/erisowebsite/templatemo_525_the_town/ALprepainted.html')" >
+        <img src="../steel-image/aluminum/prepainted.jpg" alt="prep-coils" class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" style="margin-top: 50px;" onclick="gitpage2()" />
 
         <div class="text-overlay">
             ALUMINUM PREPAINTED COILS
@@ -316,7 +320,7 @@
 
     </div>
     <div class="image-containerr">
-        <img src="../steel-image/AL/sheet.jpg" alt="sheet" class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" style="margin-top: 50px;" onclick="slideRedirection('/erisowebsite/templatemo_525_the_town/pages/ALSheet.html')">
+        <img src="../steel-image/AL/sheet.jpg" alt="sheet" class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" style="margin-top: 50px;" onclick="gitpage3()" />
         <div class="text-overlay">
            ALUMINUM SHEET
             <p>Click for more...</p>
@@ -324,7 +328,7 @@
     </div>
 
     <div class="image-containerr">
-        <img src="../steel-image/AL/sheets.JPG" alt="checker" class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" style="margin-top: 50px;" onclick="slideRedirection('/erisowebsite/templatemo_525_the_town/pages/ALchecker.html')" />
+        <img src="../steel-image/AL/sheets.JPG" alt="checker" class="image" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" style="margin-top: 50px;" onclick="gitpage4()" />
 
         <div class="text-overlay">
             ALUMINUM CHECKER
@@ -348,9 +352,23 @@
 </div>
 <script>
 
-    function slideRedirection(url){
-        window.location.href = url
+    function gitpage1() {
+
+        window.location.href = "././ALUM.html";
     }
+    function gitpage2() {
+
+        window.location.href = "././ALprepainted.html";
+    }
+    function gitpage3() {
+
+        window.location.href = "././AlSheet.html";
+    }
+    function gitpage4() {
+
+        window.location.href = "././ALchecker.html";
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
         const images = document.querySelectorAll('.image');
 
@@ -381,14 +399,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
-<!--
-<script>
-    function slideRedirection(url){
-        window.location.href = url
-    }
-
-</script>
-
---->
 </body>
 </html>
