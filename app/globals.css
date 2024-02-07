@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.max-container{
+  @apply max-w-[1200px] px-4 m-auto
+}
+
+.nav-list-item{
+  @apply hover:text-secondary-150 cursor-pointer uppercase rounded-2xl py-4 font-normal;
+}
+
+.form-control{
+  @apply w-full block border border-gray-700 outline-none p-3 text-base
+}
+
+.drop-down-item{
+  @apply hover:bg-red-800  hover:text-white transition-all py-2 px-4 font-normal
+}
+.btn{
+  @apply flex justify-center items-center border-none rounded-md font-medium py-3 px-6 text-base cursor-pointer text-nowrap
+}
+.input-error{
+  @apply text-secondary-150 text-sm
+}
+.profiles{
+  @apply text-[12px] grid xl:grid-cols-3 lg:grid-cols-2 gap-8
+}
+.profiles-col-2{
+  @apply xl:grid-cols-2 lg:grid-cols-1
+}
+.profile-wrapper{
+ @apply overflow-auto flex w-full *:flex-1
+}
+.profile-container{
+  @apply w-full overflow-hidden text-[12px] flex mt-[20px] 
+}
+.profile-image{
+  @apply min-w-48
+}
+.profile-table{
+  @apply text-black w-full min-w-[300px] max-w-md h-auto
+}
+
+.swiper-pagination-bullet-active{
+  @apply bg-white !important
+}
+.swiper-button-prev,
+.swiper-button-next{
+  @apply text-secondary-150 !important;
+}
